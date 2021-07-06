@@ -1,0 +1,13 @@
+.search-container {
+  width: 390px;
+  position: relative;
+  margin-top: -7px;
+  margin-right: 20px;
+}
+
+.search-icon {
+  color: #fff;
+  position: absolute;
+  right: 32px;
+  top: 10px;
+}

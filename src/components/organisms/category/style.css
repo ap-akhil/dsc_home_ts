@@ -1,0 +1,10 @@
+.category-card-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+}

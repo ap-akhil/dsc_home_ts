@@ -1,0 +1,32 @@
+.category-card {
+  max-width: 202px;
+  position: relative;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+.category-card-label {
+  position: absolute;
+  width: 100%;
+  bottom: 18px;
+  display: flex;
+  justify-content: center;
+}
+
+.category-card:hover .category-card-label {
+  bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .category-card-image {
+    content: url("https://ap2-prod-images.disco-api.com/2021/05/24/77da7ad6-cfe8-4eef-9dff-0e27cbaf592b.png?w=100");
+  }
+
+  .category-card-label {
+    position: unset;
+  }
+  .text-category-label {
+    font-size: 7px;
+    font-weight: 200;
+  }
+}

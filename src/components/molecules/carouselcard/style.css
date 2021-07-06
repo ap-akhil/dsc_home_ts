@@ -1,0 +1,42 @@
+.carousal-card {
+  width: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+
+.carousal-card-content {
+  width: 50%;
+  padding: 46px 20px 0px 66px;
+}
+
+.carousal-card-image {
+  width: 100%;
+  padding-right: 66px;
+}
+
+.play-content {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  align-items: center;
+  padding-top: 14px;
+}
+
+.play-icon {
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .carousal-card-content {
+    display: none;
+  }
+
+  .carousal-card-image {
+    padding-right: 0px;
+    height: 500px;
+  }
+  .carousel-img {
+    object-fit: cover;
+    opacity: 0.5;
+  }
+}

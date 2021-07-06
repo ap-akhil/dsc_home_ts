@@ -1,0 +1,82 @@
+.carousel-container {
+  max-width: 1440px;
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 4rem;
+  height: 500px;
+  position: relative;
+  display: flex;
+  overflow: hidden;
+}
+
+.carousel-item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all 0.3s linear;
+}
+
+.active-slide {
+  opacity: 1;
+  transform: translate(0);
+}
+
+.last-slide {
+  transform: translate(-100%);
+}
+
+.next-slide {
+  transform: translate(100%);
+}
+
+.prev-btn {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  height: 57px;
+  z-index: 2;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+.next-btn {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  height: 57px;
+  z-index: 2;
+  margin: auto;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+.carousel-indicator {
+  position: absolute;
+  bottom: 0;
+  z-index: 3;
+  padding-left: 72px;
+  padding-top: 10px;
+}
+
+@media (max-width: 768px) {
+  .carousel-indicator {
+    padding: 0;
+    bottom: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .carousel-container {
+    margin-top: 10px;
+  }
+  .carousel-img {
+    content: url("https://ap2-prod-images.disco-api.com/2021/02/20/92fd365e-6a68-4f5d-ad2f-4fdf44318332.jpeg?w=550&p=true&q=75");
+  }
+}
