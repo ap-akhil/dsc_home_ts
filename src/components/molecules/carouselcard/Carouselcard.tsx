@@ -39,6 +39,13 @@ export default function Carouselcard({
       <div className="carousal-card-image">
         <Image location="airport.jpeg" alt="airport" className="carousel-img" />
       </div>
+      <div className="carousal-card-content-mobile">
+        <Button name={tag1} variant="secondary" />
+        <Button name={tag2} variant="secondary" />
+        <div>
+          <Button name="Watch" variant="ternary" />
+        </div>
+      </div>
     </div>
   );
 }

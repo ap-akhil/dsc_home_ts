@@ -4,7 +4,6 @@ import Carouselcard from "../../molecules/carouselcard/Carouselcard";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 import Link from "../../atoms/link/link";
-import Image from "../../atoms/image/image";
 import "./style.css";
 
 export default function Carousel() {
@@ -60,7 +59,7 @@ export default function Carousel() {
       setIndex(0);
     }
     return () => {};
-  }, [index]);
+  }, [index, CarouselCardItems.length]);
 
   useEffect(() => {
     let slider = setInterval(() => {

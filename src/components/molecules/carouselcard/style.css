@@ -1,3 +1,6 @@
+.carousal-card-content-mobile {
+  display: none;
+}
 .carousal-card {
   width: 100%;
   display: flex;
@@ -38,5 +41,27 @@
   .carousel-img {
     object-fit: cover;
     opacity: 0.5;
+  }
+
+  .carousal-card {
+    position: relative;
+  }
+
+  .carousal-card-content-mobile {
+    width: 100%;
+    z-index: 20;
+    display: flex;
+    position: absolute;
+    bottom: 75px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .carousal-card-content-mobile div {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-top: 8px;
   }
 }

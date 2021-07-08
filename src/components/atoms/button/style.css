@@ -17,3 +17,12 @@
   background-color: rgb(40, 46, 61);
   border-color: rgb(40, 46, 61);
 }
+
+.btn-ternary {
+  background-color: whitesmoke;
+  border-color: whitesmoke;
+}
+
+.btn-ternary p {
+  color: #000;
+}

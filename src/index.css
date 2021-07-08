@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html,
+body {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
   font-family: "Roboto-Regular", sans-serif;
@@ -15,4 +20,21 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+@media only screen and (min-width: 300px) and (max-width: 750px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 750px) and (max-width: 1025px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+  .category-card {
+    max-width: 150px;
+  }
 }
