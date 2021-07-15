@@ -5,16 +5,18 @@ import "./style.css";
 
 type Props = {
   lbl: string;
+  img: string;
+  clsName: string;
 };
 
-export default function Categorycard({ lbl }: Props) {
+export default function Categorycard({ lbl, img, clsName }: Props) {
   return (
     <>
       <div className="category-card">
         <Image
-          className="category-card-image"
-          alt="catg"
-          location="categoryimg.jpeg"
+          className={`category-card-image ${clsName}`}
+          alt="img"
+          location={img}
         />
         <div className="category-card-label">
           <Text content={lbl} type="category-label" />

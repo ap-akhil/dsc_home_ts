@@ -8,7 +8,6 @@ import "./style.css";
 
 export default function Carousel() {
   const [index, setIndex] = useState(0);
-
   const CarouselCardItems = [
     {
       id: 0,
@@ -17,30 +16,38 @@ export default function Carousel() {
         "Behind every marvel of modern engineering is a cast of heroic trailblazers.",
       tag1: "Editor's Choice",
       tag2: "Must Watch",
+      img: "airport.jpeg",
+      mobImg: "airport_mob.jpeg",
     },
     {
       id: 1,
-      cardTitle: "Impossible Engineering",
+      cardTitle: "Stranger Sharks",
       cardsubheading:
-        "Behind every marvel of modern engineering is a cast of heroic trailblazers.",
-      tag1: "Editor's Choice",
+        "Mark Rober and Noah Schnapp from Stranger Things team up for Shark Week.",
+      tag1: "Shark Week",
       tag2: "Must Watch",
+      img: "Stranger_sharks.jpeg",
+      mobImg: "Stranger_sharks_mob.jpeg",
     },
     {
       id: 2,
-      cardTitle: "Impossible Engineering",
+      cardTitle: "Hell's Kitchen",
       cardsubheading:
-        "Behind every marvel of modern engineering is a cast of heroic trailblazers.",
-      tag1: "Editor's Choice",
-      tag2: "Must Watch",
+        "Ordinary chefs compete for a chance to have their own restaurant. Can they handle the heat of Gordon Ramsay's kitchen?",
+      tag1: "All Time Fav",
+      tag2: "Try Now",
+      img: "Hells_kitchen.jpeg",
+      mobImg: "Hells_kitchen_mob.jpeg",
     },
     {
       id: 3,
-      cardTitle: "Impossible Engineering",
+      cardTitle: "Bhuj: The Day India Shook",
       cardsubheading:
-        "Behind every marvel of modern engineering is a cast of heroic trailblazers.",
-      tag1: "Editor's Choice",
+        "Anupam Kher relives the horror of the earthquake that struck Bhuj in 2001.",
+      tag1: "Editor's Pick",
       tag2: "Must Watch",
+      img: "Bhuj.jpeg",
+      mobImg: "Bhuj_mob.jpeg",
     },
   ];
 
@@ -91,6 +98,7 @@ export default function Carousel() {
                 cardsubheading={item.cardsubheading}
                 tag1={item.tag1}
                 tag2={item.tag2}
+                img={window.screen.width > 768 ? item.img : item.mobImg}
               />
             </article>
           );

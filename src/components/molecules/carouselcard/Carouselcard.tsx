@@ -11,6 +11,7 @@ interface Props {
   cardsubheading: string;
   tag1: string;
   tag2: string;
+  img: string;
 }
 
 export default function Carouselcard({
@@ -18,6 +19,7 @@ export default function Carouselcard({
   cardsubheading,
   tag1,
   tag2,
+  img,
 }: Props) {
   return (
     <div className="carousal-card">
@@ -37,7 +39,7 @@ export default function Carouselcard({
         </div>
       </div>
       <div className="carousal-card-image">
-        <Image location="airport.jpeg" alt="airport" className="carousel-img" />
+        <Image location={img} alt="image" className="carousel-img" />
       </div>
       <div className="carousal-card-content-mobile">
         <Button name={tag1} variant="secondary" />

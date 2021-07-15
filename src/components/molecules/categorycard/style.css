@@ -3,6 +3,7 @@
   position: relative;
   cursor: pointer;
   margin-right: 20px;
+  height: auto;
 }
 
 .category-card-label {
@@ -18,15 +19,29 @@
 }
 
 @media (max-width: 768px) {
-  .category-card-image {
+  .ctg-img-item1 {
+    content: url("https://ap2-prod-images.disco-api.com/2021/05/24/24992b84-e726-4ef3-a4a7-c26f227bc6c1.png?w=100");
+  }
+  .ctg-img-item2 {
     content: url("https://ap2-prod-images.disco-api.com/2021/05/24/77da7ad6-cfe8-4eef-9dff-0e27cbaf592b.png?w=100");
   }
-
+  .ctg-img-item3 {
+    content: url("https://ap2-prod-images.disco-api.com/2021/05/24/ba7f6e80-b9b5-41f0-822b-5a8be6672d83.png?w=100");
+  }
+  .ctg-img-item4 {
+    content: url("https://ap2-prod-images.disco-api.com/2021/06/07/1098bdee-0fe3-4871-a5eb-ba0c35cb33bf.png?w=100");
+  }
+  .ctg-img-item5 {
+    content: url("https://ap2-prod-images.disco-api.com/2021/05/24/6230dfff-05af-4996-bf2d-ed8fce2466eb.png?w=100");
+  }
+  .ctg-img-item6 {
+    content: url("https://ap2-prod-images.disco-api.com/2021/05/24/8c08c663-79f8-4265-9d7a-122e9e67f45a.png?w=100");
+  }
   .category-card-label {
     position: unset;
   }
   .text-category-label {
-    font-size: 7px;
-    font-weight: 200;
+    font-size: 12px;
+    font-weight: 600;
   }
 }

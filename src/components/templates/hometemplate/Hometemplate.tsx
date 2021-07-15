@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../organisms/header/Header";
 import Carousel from "../../organisms/carousel/Carousel";
-import Category from "../../organisms/category/Category";
+import Gridrow from "../../organisms/Grid/Gridrow";
 import "./style.css";
 
 export default function Hometemplate() {
@@ -12,7 +12,7 @@ export default function Hometemplate() {
       </header>
       <main>
         <Carousel />
-        <Category />
+        <Gridrow />
       </main>
     </>
   );

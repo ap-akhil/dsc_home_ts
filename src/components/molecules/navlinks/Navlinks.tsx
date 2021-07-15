@@ -1,11 +1,13 @@
 import React from "react";
 import Link from "../../atoms/link/link";
 
-interface NavProps {
-  navlinks: string[];
-}
+type ArrayofType<Type> = {
+  navlinks: Type[];
+};
 
-export default function Navlinks({ navlinks }: NavProps) {
+export default function Navlinks({
+  navlinks,
+}: ArrayofType<string>): JSX.Element {
   return (
     <div className="main-nav-links">
       {navlinks.map((item, index) => {

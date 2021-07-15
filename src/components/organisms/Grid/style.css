@@ -1,0 +1,24 @@
+.category-card-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .category-card-container {
+    overflow-x: auto;
+    justify-content: unset;
+    padding-bottom: 18px;
+    padding-left: 10px;
+  }
+
+  .category-card-container::-webkit-scrollbar {
+    display: none;
+  }
+
+  .category-card img {
+    width: 65px;
+  }
+}
